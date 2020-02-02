@@ -1,0 +1,80 @@
+.nav-bar {
+    height: 72px;
+    background-color: rgb(31, 38, 65);
+    padding: 32px 32px 16px 32px;
+    border-bottom: 1px solid rgb(62, 72, 116);
+}
+
+body {
+    font-size: 14pt;
+    font-family: 'Work Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.logo {
+    color: white;
+    font-size: 16pt;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 6px;
+}
+
+h1 {
+    font-size: 36pt;
+    font-family: 'Space Mono', monospace;
+    color: rgb(235, 74, 132);
+}
+
+h2 {
+    font-size: 18pt;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+button {
+    height: 56px;
+    background-color: #EB4A84;
+    border-radius: 30px;
+    padding: 0px 30px;
+    color: white;
+    border: none;
+    font-size: 14pt;
+    font-family: inherit;
+    margin-bottom: 32px;
+}
+
+.flex-container {
+    background-image: url("img/home-bg.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    background-size: 100%;
+    background-position-y: center;
+    background-position-x: -80px;
+    
+}
+
+.flex-1 {
+    margin: 32px;
+    flex-grow: 8;
+    order: 1;
+    flex-basis: 400px;
+}
+
+.flex-2 {
+    margin: 32px;
+    flex-grow: 1;
+    order: 2;
+}
+
+.footer-bar {
+    padding: 32px;
+    background-color: rgb(31, 38, 65);
+}
