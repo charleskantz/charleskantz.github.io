@@ -1,8 +1,21 @@
+html {
+
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .nav-bar {
     height: 72px;
-    background-color: rgb(31, 38, 65);
-    padding: 32px 32px 16px 32px;
-    border-bottom: 1px solid rgb(62, 72, 116);
+    background-color: #1B1F35;
+    padding: 24px 32px 16px 32px;
+    clear: both;
+}
+
+.nav-bar img {
+    float: right;
 }
 
 body {
@@ -12,10 +25,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
-}
-
-div {
-    box-sizing: border-box;
 }
 
 .logo {
@@ -28,7 +37,8 @@ div {
 h1 {
     font-size: 36pt;
     font-family: 'Space Mono', monospace;
-    color: rgb(235, 74, 132);
+    color: #EB6E64;
+    font-weight: normal;
 }
 
 h2 {
@@ -40,7 +50,7 @@ h2 {
 
 button {
     height: 56px;
-    background-color: #EB4A84;
+    background-color: #EB6E64;
     border-radius: 30px;
     padding: 0px 30px;
     color: white;
@@ -50,15 +60,25 @@ button {
     margin-bottom: 32px;
 }
 
-.flex-container {
-    background-image: url("img/home-bg.jpg");
+.flex-container-column {
     display: flex;
     flex-direction: column;
     align-items: space-around;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.home-bg {
+    background-image: url("img/home-bg.jpg");
+    background-color: #1B1F35;
     background-size: 100%;
-    background-position-y: center;
+    background-position-y: 20px;
     background-position-x: -80px;
-    
 }
 
 .flex-1 {
@@ -76,5 +96,32 @@ button {
 
 .footer-bar {
     padding: 32px;
-    background-color: rgb(31, 38, 65);
+    background-color: #1B1F35;
+    color: #4D59AC;
+}
+
+.footer-flex-1 {
+    margin-bottom: 16px;
+    order: 1;
+    flex-basis: 50%;
+}
+
+.footer-flex-1 div {
+    margin-bottom: 16px;
+}
+
+.footer-flex-2 {
+    text-align: right;
+    order: 2;
+    margin-bottom: 16px;
+    flex-basis: 50%;
+}
+
+.mouse-type {
+    font-size: 10pt;
+}
+
+.footer-flex-2 img {
+    margin-left: 16px;
+    margin-bottom: 16px;
 }
