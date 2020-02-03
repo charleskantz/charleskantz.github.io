@@ -150,13 +150,17 @@ button:hover {
 }
 
 .footer-flex-2 img {
-    margin-left: 16px;
+    margin-left: 14px;
     margin-bottom: 16px;
 }
 
 .left-margin {
     margin: 0 32px;
     vertical-align: center;
+}
+
+.bottom-margin {
+    margin-bottom: 16px;
 }
 
 .download {
