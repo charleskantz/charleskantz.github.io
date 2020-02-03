@@ -14,7 +14,7 @@ html {
     clear: both;
 }
 
-.nav-bar img {
+.mobile-menu {
     float: right;
 }
 
@@ -25,6 +25,17 @@ body {
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
+    background-color: rgb(1, 1, 1);
+    color: rgb(185, 189, 223);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    font-weight: bolder;
 }
 
 .logo {
@@ -46,6 +57,13 @@ h2 {
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     color: white;
+    line-height: 30px;
+    margin: 0px 0px 16px 0px;
+}
+
+h3 {
+    color: #EB6E64;
+    font-weight: normal;
 }
 
 button {
@@ -53,11 +71,19 @@ button {
     background-color: #EB6E64;
     border-radius: 30px;
     padding: 0px 30px;
-    color: white;
+    color: rgb(1, 1, 1);
     border: none;
     font-size: 14pt;
     font-family: inherit;
     margin-bottom: 32px;
+    /* transition-duration: 0.5s; */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #EA9B95;
+    scale: 2;
+    cursor: pointer;
 }
 
 .flex-container-column {
@@ -75,10 +101,11 @@ button {
 
 .home-bg {
     background-image: url("img/home-bg.jpg");
-    background-color: #1B1F35;
-    background-size: 100%;
+    background-color: rgb(1, 1, 1);
+    background-size: auto 100%;
     background-position-y: 20px;
     background-position-x: -80px;
+    background-repeat: no-repeat;
 }
 
 .flex-1 {
@@ -95,6 +122,7 @@ button {
 }
 
 .footer-bar {
+    margin-top: 16px;
     padding: 32px;
     background-color: #1B1F35;
     color: #4D59AC;
@@ -124,4 +152,50 @@ button {
 .footer-flex-2 img {
     margin-left: 16px;
     margin-bottom: 16px;
+}
+
+.left-margin {
+    margin: 0 32px;
+    vertical-align: center;
+}
+
+.download {
+    margin-bottom: 32px;
+}
+
+.portrait img {
+    width: 100%;
+    height: auto;
+}
+
+.about {
+    line-height: 26px;
+    padding: 32px 32px 0 32px;
+}
+.contact-icons {
+    margin: 32px 32px 48px 32px;
+}
+.contact-icons a{
+    padding-right: 16px;
+}
+
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 220px;
+    height: 150px;
+    background-color: rgb(1, 1, 1);
+    border: 2px solid #1B1F35;
+    padding: 18px 26px 32px 32px;
+    z-index: 1;
+}
+
+.mobile-nav #menu {
+    display: none;
+}
+
+.mobile-nav div div {
+    padding: 0 0 16px 0;
 }
