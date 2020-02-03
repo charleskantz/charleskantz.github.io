@@ -33,11 +33,11 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+/*          causing weird scaling behavior in element that is not desired
 a:hover {
     font-weight: bolder;
 }
-
+*/
 .logo {
     color: white;
     font-size: 16pt;
