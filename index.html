@@ -10,18 +10,23 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans:400,600&display=swap" rel="stylesheet">
-
 </head>
-<body> 
+<body> <div>
     <header>
         <nav> <!--                 NAVIGATION    -->
-            <div class="nav-bar"> 
-                <span class="logo"><a href="index.html">Charles Kantz</a></span> 
-                <a href="javascript:void(0);" onclick="menuToggle()">
-                    <img class="mobile-menu" src="img/bars.png" alt="menu">
-                </a>
+            <div class="nav-bar">
+                <div class="container"> 
+                    <span class="logo"><a href="index.html">Charles Kantz</a></span> 
+                    <div class="mobile-menu">
+                        <a href="javascript:void(0);" onclick="menuToggle()">
+                        <img src="img/bars.png" alt="menu"></a>
+                    </div>
+                    <div class="wide-nav"> <!--               DESKTOP NAV -->
+                        <a href="about.html">About</a> <a href="contact.html">Contact</a>
+                    </div>
+                </div>
             </div>
-            <div class="mobile-nav" id="menu"> <!-- MOBILE NAV (OFF BY DEFAULT)-->
+            <div class="mobile-nav" id="menu"> <!-- MOBILE NAV (HIDDEN BY DEFAULT)-->
                 <div>
                     <a href="javascript:void(0);" onclick="menuToggle()"><img class="mobile-menu" src="img/bars.png" alt="menu"></a>
                     <div><a href="index.html">Home</a></div>
@@ -31,39 +36,37 @@
             </div>
         </nav>
     </header>
-    <main class="home-bg"> <!--                 MAIN    -->
-        <div class="flex-container-column">
-            <div class="flex-1"> <!-- headers -->
-                <div><h1>Hello, I'm Charles.</h1></div>
-                <div><h2>Designer turning developer.</h2></div>
-            </div>
-            <div class="flex-2"> <!-- CTA -->
+    <main class="container home-bg"> <!--                 MAIN    -->
+        <div class="home-content">
+                <h1>Hello, I'm<br>Charles.</h1>
+                <h2>Designer turning <br>developer.</h2>
                 <a href="about.html"><button>Get to know me</button></a>
-            </div> 
         </div>
     </main>
     <footer>
         <div class="footer-bar">
-            <div class="flex-container-row"> <!-- footer nav -->
-                <div class="footer-flex-1">
-                    <div><a href="index.html">Home</a></div>
-                    <div><a href="about.html">About</a></div>
-                    <div><a href="contact.html">Contact</a></div>
+            <div class="container">
+                <div class="flex-container-row"> <!-- footer nav -->
+                    <div class="footer-flex-1">
+                        <a href="index.html">Home</a><br>
+                        <a href="about.html">About</a><br>
+                        <a href="contact.html">Contact</a><br>
+                    </div>
+                    <div class="footer-flex-2">
+                        <a href="https://www.instagram.com/charleskantz/" target="_blank">
+                            <img src="img/ig.png" alt="Instagram icon">
+                        </a>
+                        <a href="https://github.com/charleskantz" target="_blank">
+                            <img src="img/gh.png" alt="GitHub icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/charleskantz/" target="_blank">
+                            <img src="img/in.png" alt="Linkedin icon">
+                        </a>
+                    </div>
                 </div>
-                <div class="footer-flex-2">
-                    <a href="https://www.instagram.com/charleskantz/" target="_blank">
-                        <img src="img/ig.png" alt="Instagram icon">
-                    </a>
-                    <a href="https://github.com/charleskantz" target="_blank">
-                        <img src="img/gh.png" alt="GitHub icon">
-                    </a>
-                    <a href="https://www.linkedin.com/in/charleskantz/" target="_blank">
-                        <img src="img/in.png" alt="Linkedin icon">
-                    </a>
-                </div>
-            </div>
             <div class="mouse-type">© Charles Kantz</div> <!-- copyright -->
+            </div>
         </div>
-    </footer>
+    </footer></div>
 </body>
 </html>

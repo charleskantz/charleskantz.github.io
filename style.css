@@ -1,4 +1,4 @@
-html {
+html {  /*   ~~~  MOBILE CSS HERE!!!! ~~~  */
 
     box-sizing: border-box;
 }
@@ -15,6 +15,7 @@ html {
 }
 
 .mobile-menu {
+    display: inherit;
     float: right;
 }
 
@@ -33,11 +34,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
-/*          causing weird scaling behavior in element that is not desired
-a:hover {
-    font-weight: bolder;
-}
-*/
+
 .logo {
     color: white;
     font-size: 16pt;
@@ -86,16 +83,10 @@ button:hover {
     cursor: pointer;
 }
 
-.flex-container-column {
-    display: flex;
-    flex-direction: column;
-    align-items: space-around;
-}
-
 .flex-container-row {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
 }
 
@@ -108,30 +99,31 @@ button:hover {
     background-repeat: no-repeat;
 }
 
-.flex-1 {
-    margin: 32px;
-    flex-grow: 8;
-    order: 1;
-    flex-basis: 400px;
+.home-content {
+    padding: 32px;
 }
 
-.flex-2 {
-    margin: 32px;
-    flex-grow: 1;
-    order: 2;
+.home-content button {
+    margin-top: 300px;
 }
 
 .footer-bar {
-    margin-top: 16px;
     padding: 32px;
     background-color: #1B1F35;
     color: #4D59AC;
+    width: 100%;
 }
 
 .footer-flex-1 {
     margin-bottom: 16px;
     order: 1;
     flex-basis: 50%;
+}
+
+.footer-flex-1 a {
+    padding-right: 24px;
+    padding-bottom: 16px;
+    line-height: 2;
 }
 
 .footer-flex-1 div {
@@ -202,4 +194,68 @@ button:hover {
 
 .mobile-nav div div {
     padding: 0 0 16px 0;
+}
+
+.wide-nav {
+    display: none;
+}
+
+@media(min-width: 600px) { /*   ~~~  DESKTOP CSS HERE!!!! ~~~  */
+
+
+.mobile-menu {
+    display: none;
+}
+
+.wide-nav {
+    display: block;
+    float: right;
+    font-size: 12pt;
+    padding-top: 4px;
+}
+
+.wide-nav a {
+    margin-left: 24px;
+}
+
+
+
+.home-bg {
+    background-image: url("img/home-bg.jpg");
+    background-color: rgb(1, 1, 1);
+    background-size: 800px auto;
+    background-position: top 55% right -160px;
+    background-repeat: no-repeat;
+    min-height: auto;
+}
+
+.home-bg h1 {
+    margin-top: 100px;
+}
+
+.home-content button {
+    margin-top: 32px;
+    margin-bottom: 100px;
+}
+
+.footer-flex-1 br {
+    display: none;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+@media(min-width: 750px) { /*   ~~~  fix line break on home h2 ~~~  */
+
+.home-content h2 br {
+    display: none;
+}
+
+
+
+
+
+
 }
