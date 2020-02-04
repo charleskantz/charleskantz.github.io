@@ -14,14 +14,16 @@
 <body> 
     <header>
         <nav> <!--                 NAVIGATION    -->
-            <div class="nav-bar"> 
-                <span class="logo"><a href="index.html">Charles Kantz</a></span> 
-                <div class="mobile-menu">
-                    <a href="javascript:void(0);" onclick="menuToggle()">
-                    <img src="img/bars.png" alt="menu"></a>
-                </div>
-                <div class="wide-nav"> <!--               DESKTOP NAV -->
-                    <a href="about.html">About</a> <a href="contact.html">Contact</a>
+            <div class="nav-bar">
+                <div class="container"> 
+                    <span class="logo"><a href="index.html">Charles Kantz</a></span> 
+                    <div class="mobile-menu">
+                        <a href="javascript:void(0);" onclick="menuToggle()">
+                        <img src="img/bars.png" alt="menu"></a>
+                    </div>
+                    <div class="wide-nav"> <!--               DESKTOP NAV -->
+                        <a href="about.html">About</a> <a href="contact.html">Contact</a>
+                    </div>
                 </div>
             </div>
             <div class="mobile-nav" id="menu"> <!-- MOBILE NAV (HIDDEN BY DEFAULT)-->
@@ -34,49 +36,53 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="left-margin"><h1>About Me</h1></div>
-        <div class="portrait">
-            <img src="img/ckantz_portrait.jpg" alt="Photo of Charles Kantz">
-        </div>
-        <div class="about"><h2>I am starting a new journey into web development!</h2>
-            <p>As a former designer of 12 years I have occasionally dipped my toes into coding for my projects. It wasn't until designing and implementing a fully working VR experience that I realized how much I enjoyed software development, even more than design. I took that as a sign and left my job to pursue this new love. I am now currently enrolled in the Rithm School where I will hone my skills and complete my transition to development!</p>
-            <p> Outside of my career, I have spent most of my life in the Bay Area, aside from a few years in the suburbs of Portland. Besides immersing myself in development and design, you can find me enjoying sci-fi, photography, video games, baking bread, and the company of friends.</p></div>
-        <div class="left-margin download">
-            <a href="img/ckantz_resume.pdf" download>
-                <img src="img/download.png" alt="Download resume icon">
-                <span>
-                    <strong>Download my resume here.</strong>
-                </span>
-            </a>
-        </div>
-        <div class="left-margin">
-            <a href="contact.html">
-                <button>Let's Get in Touch</button>
-            </a>
+    <main>                          <!--                        MAIN CONTENT     -->
+        <div class="container left-margin"><h1>About Me</h1></div>
+        <div class="container portrait"></div>
+        <div class="container">
+            <div class="about-h2"><h2>I am starting a new journey into web development!</h2></div>
+            <div class="about">
+                <p>As a former designer of 12 years I have occasionally dipped my toes into coding for my projects. It wasn't until designing and implementing a fully working VR experience that I realized how much I enjoyed software development, even more than design. I took that as a sign and left my job to pursue this new love. I am now currently enrolled in the Rithm School where I will hone my skills and complete my transition to development!</p>
+                <p> Outside of my career, I have spent most of my life in the Bay Area, aside from a few years in the suburbs of Portland. Besides immersing myself in development and design, you can find me enjoying sci-fi, photography, video games, baking bread, and the company of friends.</p></div>
+            <div class="download">
+                <a href="img/ckantz_resume.pdf" download>
+                    <img src="img/download.png" alt="Download resume icon">
+                    <span>
+                        <strong>Download my resume here.</strong>
+                    </span>
+                </a>
+            </div>
+            <div class=" margin-32">
+                <a href="contact.html">
+                    <button>Let's Get in Touch</button>
+                </a>
+            </div>
         </div>
     </main>
     <footer>
         <div class="footer-bar">
-            <div class="flex-container-row"> <!-- footer nav -->
-                <div class="footer-flex-1">
-                    <a href="index.html">Home</a><br>
-                    <a href="about.html">About</a><br>
-                    <a href="contact.html">Contact</a><br>
+            <hr>
+            <div class="container">
+                <div class="flex-container-row"> <!-- footer nav -->
+                    <div class="footer-flex-1">
+                        <a href="index.html">Home</a><br>
+                        <a href="about.html">About</a><br>
+                        <a href="contact.html">Contact</a><br>
+                    </div>
+                    <div class="footer-flex-2">
+                        <a href="https://www.instagram.com/charleskantz/" target="_blank">
+                            <img src="img/ig.png" alt="Instagram icon">
+                        </a>
+                        <a href="https://github.com/charleskantz" target="_blank">
+                            <img src="img/gh.png" alt="GitHub icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/charleskantz/" target="_blank">
+                            <img src="img/in.png" alt="Linkedin icon">
+                        </a>
+                    </div>
                 </div>
-                <div class="footer-flex-2">
-                    <a href="https://www.instagram.com/charleskantz/" target="_blank">
-                        <img src="img/ig.png" alt="Instagram icon">
-                    </a>
-                    <a href="https://github.com/charleskantz" target="_blank">
-                        <img src="img/gh.png" alt="GitHub icon">
-                    </a>
-                    <a href="https://www.linkedin.com/in/charleskantz/" target="_blank">
-                        <img src="img/in.png" alt="Linkedin icon">
-                    </a>
-                </div>
-            </div>
             <div class="mouse-type">© Charles Kantz</div> <!-- copyright -->
+            </div>
         </div>
     </footer>
 </body>

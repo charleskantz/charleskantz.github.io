@@ -14,14 +14,16 @@
 <body> 
     <header>
         <nav> <!--                 NAVIGATION    -->
-            <div class="nav-bar"> 
-                <span class="logo"><a href="index.html">Charles Kantz</a></span> 
-                <div class="mobile-menu">
-                    <a href="javascript:void(0);" onclick="menuToggle()">
-                    <img src="img/bars.png" alt="menu"></a>
-                </div>
-                <div class="wide-nav"> <!--               DESKTOP NAV -->
-                    <a href="about.html">About</a> <a href="contact.html">Contact</a>
+            <div class="nav-bar">
+                <div class="container"> 
+                    <span class="logo"><a href="index.html">Charles Kantz</a></span> 
+                    <div class="mobile-menu">
+                        <a href="javascript:void(0);" onclick="menuToggle()">
+                        <img src="img/bars.png" alt="menu"></a>
+                    </div>
+                    <div class="wide-nav"> <!--               DESKTOP NAV -->
+                        <a href="about.html">About</a> <a href="contact.html">Contact</a>
+                    </div>
                 </div>
             </div>
             <div class="mobile-nav" id="menu"> <!-- MOBILE NAV (HIDDEN BY DEFAULT)-->
@@ -34,45 +36,50 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="left-margin">
-            <h1>Contact</h1>
-        </div>
-        <div>
-            <h2 class="left-margin">Reach out on social media if you want to say hello!</h2>
-        </div>
-        <div class="left-margin contact-icons">
-            <a href="address" target="_blank"><img src="img/ig-contact.png" alt="instagram logo"></a>
-            <a href="address" target="_blank"><img src="img/gh-contact.png" alt="github logo"></a>
-            <a href="address" target="_blank"><img src="img/in-contact.png" alt="linkedin logo"></a>
-        </div>
-        <div class="left-margin">
-            <h2 >For professional inquiries, please email me!</h2>
-            <h3><a href="mailto: kantz.charles@gmail.com"> kantz.charles@gmail.com</a></h3>
-            <img class="bottom-margin" src="img/wave.png" alt="wave icon">
+    <main>                         <!--                        MAIN CONTENT     -->
+        <div class="container contactz">
+            <div class="contact-h1">
+                <h1>Contact</h1>
+            </div>
+            <div class="left-margin">
+                <h2>Reach out on social media if you want to say hello!</h2>
+            </div>
+            <div class="left-margin contact-icons">
+                <a href="address" target="_blank"><img src="img/ig-contact.png" alt="instagram logo"></a>
+                <a href="address" target="_blank"><img src="img/gh-contact.png" alt="github logo"></a>
+                <a href="address" target="_blank"><img src="img/in-contact.png" alt="linkedin logo"></a>
+            </div>
+            <div class="left-margin">
+                <h2 >For professional inquiries, please email me!</h2>
+                <h3><a href="mailto: kantz.charles@gmail.com"> kantz.charles@gmail.com</a></h3>
+                <img class="contact-wave" src="img/wave.png" alt="wave icon">
+            </div>
         </div>
     </main>
     <footer>
         <div class="footer-bar">
-            <div class="flex-container-row"> <!-- footer nav -->
-                <div class="footer-flex-1">
-                    <a href="index.html">Home</a><br>
-                    <a href="about.html">About</a><br>
-                    <a href="contact.html">Contact</a><br>
+            <hr>
+            <div class="container">
+                <div class="flex-container-row"> <!-- footer nav -->
+                    <div class="footer-flex-1">
+                        <a href="index.html">Home</a><br>
+                        <a href="about.html">About</a><br>
+                        <a href="contact.html">Contact</a><br>
+                    </div>
+                    <div class="footer-flex-2">
+                        <a href="https://www.instagram.com/charleskantz/" target="_blank">
+                            <img src="img/ig.png" alt="Instagram icon">
+                        </a>
+                        <a href="https://github.com/charleskantz" target="_blank">
+                            <img src="img/gh.png" alt="GitHub icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/charleskantz/" target="_blank">
+                            <img src="img/in.png" alt="Linkedin icon">
+                        </a>
+                    </div>
                 </div>
-                <div class="footer-flex-2">
-                    <a href="https://www.instagram.com/charleskantz/" target="_blank">
-                        <img src="img/ig.png" alt="Instagram icon">
-                    </a>
-                    <a href="https://github.com/charleskantz" target="_blank">
-                        <img src="img/gh.png" alt="GitHub icon">
-                    </a>
-                    <a href="https://www.linkedin.com/in/charleskantz/" target="_blank">
-                        <img src="img/in.png" alt="Linkedin icon">
-                    </a>
-                </div>
-            </div>
             <div class="mouse-type">© Charles Kantz</div> <!-- copyright -->
+            </div>
         </div>
     </footer>
 </body>
