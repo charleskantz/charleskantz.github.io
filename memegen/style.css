@@ -140,6 +140,8 @@ label {
     letter-spacing: 1px;
     background-image: url('https://2static.fjcdn.com/pictures/Meme+blanks+meme+blanks+everywhere_d86bc4_5936720.jpg');
     background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 4px;
     display: inline-block;
 }
