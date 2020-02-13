@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CK Meme Generator</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="headlines">
+                <h1>Meme Generator</h1>
+                <h2>Fill out this form to Make a meme!</h2>
+            </div>
+            <div>
+                <form action="#">
+                    <label for="form-image-url">Image Link</label><br><input type="text" name="form-image-url" placeholder="https://imgflip.com/s/meme/Success-Kid.jpg"><br>
+                    <label for="form-text-top">Top Text</label><br><input type="text" name="form-text-top" placeholder='Cop pulled me over and said "papers"'><br>
+                    <label for="form-text-bottom">Bottom Text</label><br><input type="text" name="form-text-bottom" placeholder='I yelled "scissors" and drove off'><br>
+                    <input type="submit" value="Make a Meme">
+                    <span class="form-no-content"></span>
+                </form>
+            </div>
+        </div>
+        <hr>
+    <div class="meme-list"></div>
+    <script src="script.js"></script>
+</body>
+</html>

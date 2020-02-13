@@ -1,0 +1,194 @@
+/* Structural CSS */
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .2px;
+    height: 100%;
+    margin: 0;
+    background: rgb(255,210,119);
+    background: linear-gradient(79deg, rgba(255,210,119,1) 0%, rgba(214,150,222,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1072px;
+    margin: 42px auto;
+    margin-bottom: calc();
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15)
+}
+
+hr {
+    border: 1px solid rgb(246,246,247);
+    margin: 28px 30px 16px 30px;
+}
+
+
+.meme-list {
+    min-height: 200px;
+    padding: 24px;
+}
+
+/* Form CSS */
+
+.header {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+
+.headlines {
+    text-align: center;
+}
+
+h1 {
+    font-size: 42pt;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: rgb(234,76,137);
+}
+h2 {
+    font-size: 20pt;
+    margin-bottom: 42px;
+    margin-top: 4px;
+    color: rgba(0, 0, 0, .8);
+}
+
+input[type=text] {
+    height: 42px;
+    width: 500px;
+    background-color: rgb(246,246,247);
+    border: none;
+    border-radius: 6px;
+    box-shadow: inset 0px 2px 0px 0px rgb(240,240,241);
+    padding-left: 18px;
+    margin-bottom: 18px;
+    margin-top: 5px;
+    font-size: 12pt;
+}
+
+input[type=submit] {
+    background-color: rgb(234,76,137);
+    color: white;
+    font-family: inherit;
+    border: none;
+    border-radius: 6px;
+    height: 42px;
+    padding: 0 32px;
+    text-align: center;
+    margin: 14px 0px;
+}
+
+label {
+    font-size: 12pt;
+    padding-bottom: 4px;
+}
+
+::placeholder {
+    color: rgb(158,158,159);
+}
+
+.form-no-content {
+    font-style: italic;
+    color: rgb(234,76,137);
+    font-size: 10pt;
+    margin-left: 24px;
+    letter-spacing: .5px;
+}
+
+
+/* Meme CSS */
+
+@font-face {
+    font-family: "Impact";
+    src: url('impact.ttf') format('truetype');
+}
+
+.meme-submitted {
+    font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-shadow:2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0px 2px 0 #000,
+        2px 0px 0 #000,
+        0px -2px 0 #000,
+        -2px 0px 0 #000,
+        2px 2px 5px #000;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(246,246,247);
+    margin: 6px;
+    position: relative;
+    text-align: center;
+    font-size: 22pt;
+    letter-spacing: 1px;
+    background-image: url('https://2static.fjcdn.com/pictures/Meme+blanks+meme+blanks+everywhere_d86bc4_5936720.jpg');
+    background-size: 100%;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.meme-text-top {
+    margin-top: 12px;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    max-width: auto;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+.meme-text-bottom {
+    margin-bottom: 12px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    max-width: auto;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+.meme-close {
+    display: none;
+    width: 42px;
+    height: 42px;
+    background-color: rgb(234,76,137);
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding-top: 4px;
+    padding-left: 8px;
+    z-index: 2;
+}
+
+.meme-close-div {
+    width: 500px;
+    height: 500px;
+}
