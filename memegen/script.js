@@ -37,11 +37,13 @@ window.onload = function(){
         var memeBox = document.createElement('div'); // create divs
         var memeTop = document.createElement('div');
         var memeBot = document.createElement('div');
+        var memeImg = document.createElement('img');
         memeBox.className = "meme-submitted";
         memeTop.className = 'meme-text-top';
         memeBot.className = "meme-text-bottom";
+        memeImg.className = 'meme-close-div';
 
-        memeBox.style.backgroundImage = 'url(' + img + ')' // set img source on parent div
+        memeImg.src = img; // set img source on parent div
 
         var pTop = document.createElement('p'); // set top/bottom paragraphs with imported text
         pTop.innerText = top;
@@ -52,15 +54,16 @@ window.onload = function(){
         memeClose.className = "meme-close";
         memeClose.innerText = 'X';
 
-        var memeCloseDiv = document.createElement('div'); // parent div for close button for mouseout events
-        memeCloseDiv.className = "meme-close-div";
+        // var memeCloseDiv = document.createElement('div'); // parent div for close button for mouseout events
+        // memeCloseDiv.className = "meme-close-div";
 
         memeTop.appendChild(pTop); // append all elements to parent div
         memeBot.appendChild(pBot);
-        memeCloseDiv.appendChild(memeClose);
+        memeBox.appendChild(memeImg);
         memeBox.appendChild(memeTop);
         memeBox.appendChild(memeBot);
-        memeBox.appendChild(memeCloseDiv);
+        // memeBox.appendChild(memeCloseDiv);
+        memeBox.appendChild(memeClose);
 
         var memeList = document.querySelector('.meme-list'); // append new meme to list in 1st position
         if(!memeList.hasChildNodes()){
@@ -81,13 +84,13 @@ window.onload = function(){
     var memeList = document.querySelector('.meme-list'); // EventListener on parent div ensuring all clicks are on the close button before deleting
     memeList.addEventListener("click", function(e){
         if(e.target.className === "meme-close"){
-            e.target.parentElement.parentElement.style.display = "none";
+            e.target.parentElement.style.display = "none"; // bye bye meme
         }
     });
 
     memeList.addEventListener("mouseover", function(e){ // makes close button appear on mouseover
         if(e.target.className === "meme-close-div"){
-            e.target.firstChild.style.display = "inline";
+            e.target.parentElement.lastChild.style.display = "inline";
         }
         if(e.target.className === "meme-close"){ // makes sure the close button remains visible on mouseout of 'meme-close-div'
             e.target.style.display = "inline";
@@ -97,7 +100,7 @@ window.onload = function(){
     memeList.addEventListener("mouseout", function(e){ // makes close button disappear on mouseout
         if(e.target.className === "meme-close-div"){
 
-            e.target.firstChild.style.display = "none";
+            e.target.parentElement.lastChild.style.display = "none";
         }
     });
 

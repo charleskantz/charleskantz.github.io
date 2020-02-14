@@ -33,13 +33,25 @@ body {
 
 hr {
     border: 1px solid rgb(246,246,247);
-    margin: 28px 30px 16px 30px;
+    margin: 0px 30px 0px 30px;
 }
 
 
 .meme-list {
     min-height: 200px;
     padding: 24px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row; 
+    flex-direction: row;
+    -webkit-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    webkit-align-items: center;
+    align-items: center;
+    -webkit-align-content: center;
+    align-content: center;
 }
 
 /* Form CSS */
@@ -47,7 +59,7 @@ hr {
 .header {
     width: 500px;
     margin: 0 auto;
-    padding-top: 24px;
+    padding: 24px 16px;
 }
 
 .headlines {
@@ -70,7 +82,8 @@ h2 {
 
 input[type=text] {
     height: 42px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     background-color: rgb(246,246,247);
     border: none;
     border-radius: 6px;
@@ -131,7 +144,6 @@ label {
         -2px 0px 0 #000,
         2px 2px 5px #000;
     width: 500px;
-    height: 500px;
     background-color: rgb(246,246,247);
     margin: 6px;
     position: relative;
@@ -191,6 +203,9 @@ label {
 }
 
 .meme-close-div {
+}
+
+img {
     width: 500px;
-    height: 500px;
+    border-radius: 4px;
 }
