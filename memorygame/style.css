@@ -1,0 +1,166 @@
+/* Structural Stuff */
+
+html {
+     box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: .2px;
+    background-image: linear-gradient(19deg, #21D4FD 30%, #B721FF 100%);
+    background-attachment: fixed;
+    height: 100%;
+
+}
+
+.container {
+    max-width: 812px;
+    margin: 0 auto;
+}
+
+/* Header Stuff */
+
+.header-container {
+    width: 812px;
+    margin: 0 auto 20px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: white;
+    padding: 20px 28px 28px;
+    border-radius: 0 0 8px 8px;
+}
+
+.header-start {
+    order: 1;
+    flex-grow: 1;
+}
+
+button {
+    height: 42px;
+    background-color: #B721FF;
+    color: white;
+    padding: 0 24px;
+    border: none;
+    border-radius: 8px;
+    width: 125px;
+}
+
+.game-started {
+    border: 2px solid #B721FF;
+    background-color: white;
+    color: #B721FF;
+}
+
+h1 {
+    margin: 0;
+    font-size: 42px;
+    letter-spacing: 0px;
+}
+
+.header-title {
+    order: 2;
+    flex-grow: 2;
+    text-align: center;
+}
+
+.header-score {
+    order: 3;
+    flex-grow: 1;
+    text-align: right;
+}
+
+/* Card Stuff */
+
+.game-card {
+    height: 200px;
+    width: 180px;
+    margin: 10px;
+    display: inline-block;
+    border: 12px solid white;
+    border-radius: 8px;
+
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.game-card.is-flipped {
+    transform: rotateY(180deg);
+  }
+
+.game-card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    pointer-events: none;
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    background-position: center;
+}
+
+.game-card-outer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    pointer-events: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.game-container {
+    max-width: 880px;
+    margin: 0 auto 16px;
+    text-align: center;
+}
+
+
+
+/* Card images */
+
+.l {
+    background-image: url('img/cat01.jpg');
+}
+
+.ll {
+    background-image: url('img/cat02.jpg');
+}
+
+.lll {
+    background-image: url('img/cat03.jpg');
+}
+
+.llll {
+    background-image: url('img/cat04.jpg');
+}
+
+.lllll {
+    background-image: url('img/cat05.jpg');
+}
+
+.llllll {
+    background-image: url('img/cat06.jpg');
+}
+
+.lllllll {
+    background-image: url('img/cat07.jpg');
+}
+
+.llllllll {
+    background-image: url('img/cat08.jpg');
+}
+
+
+
